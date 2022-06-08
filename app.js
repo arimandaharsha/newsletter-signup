@@ -35,7 +35,7 @@ app.post("/", function(req, res){
     const url = "https://us17.api.mailchimp.com/3.0/lists/d850189402"
     const options = {
         method: "POST",
-        auth: "harsha:API-KEY-HERE"
+        auth: "harsha:7465e7493d56d1429aaf869d502bddb4-us17"
 
     }
 
@@ -62,7 +62,7 @@ app.post("/failure", function(req,res){
     res.redirect("/");
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server started on port 3000");
 })
 
