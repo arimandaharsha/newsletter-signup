@@ -1,0 +1,9 @@
+html,
+body {
+  height: 100%;
+}
+
+.jumbotron{
+    padding: 5%;
+    background-color: rgb(255, 167, 152);
+}
